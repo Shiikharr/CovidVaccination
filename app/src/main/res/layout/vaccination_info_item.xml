@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:padding="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vaccineCentre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/hospital"
+            android:drawablePadding="5dp"
+            android:padding="4dp"
+            android:text="Vaccination Centre"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vaccineLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaccineCentre"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="5dp"
+            android:padding="4dp"
+            android:text="Location"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vaccineTimings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaccineLocation"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="5dp"
+            android:padding="4dp"
+            android:text="Vaccination Timings"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/mlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaccineTimings"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/vaccineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/injection"
+                android:padding="4dp"
+                android:text="Vaccine Name"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/vaccineCharges"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/money"
+                android:padding="4dp"
+                android:text="Vaccine Charges"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mlinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mlinearLayout"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/vaccinationage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/age"
+                android:padding="4dp"
+                android:text="Age"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/isAvailable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/store"
+                android:padding="4dp"
+                android:text="Availability"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
